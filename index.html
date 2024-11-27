@@ -144,74 +144,179 @@
                 </div>
             
                 <!-- Botonera para navegar entre secciones -->
-                <div class="row g-4">
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img src="https://picsum.photos/400/300?random=1" class="card-img-top" alt="Marco Teórico">
-                            <div class="card-body">
-                                <h5 class="card-title">Marco Teórico</h5>
-                                <p class="card-text">
-                                    En esta sección se exploran los conceptos teóricos fundamentales que sustentan el diseño y desarrollo del sistema de gestión de productos en el supermercado.
-                                </p>
-                                <a href="index.php?page=marco_teorico" class="btn btn-primary btn-section">Ver Marco Teórico</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img src="https://picsum.photos/400/300?random=2" class="card-img-top" alt="Análisis Estructurado">
-                            <div class="card-body">
-                                <h5 class="card-title">Análisis Estructurado</h5>
-                                <p class="card-text">
-                                    En esta sección se detallan los procesos de análisis del sistema, aplicando técnicas de modelado estructurado para representar el flujo de datos y las interacciones entre los componentes.
-                                </p>
-                                <a href="index.php?page=modelo_Estructurado" class="btn btn-primary btn-section">Ver Análisis Estructurado</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img src="https://picsum.photos/400/300?random=3" class="card-img-top" alt="Modelado O-O">
-                            <div class="card-body">
-                                <h5 class="card-title">Modelado Orientado a Objetos</h5>
-                                <p class="card-text">
-                                    Aquí se describe el modelado del sistema utilizando el enfoque orientado a objetos, mostrando la estructura de clases, objetos y relaciones entre ellos.
-                                </p>
-                                <a href="index.php?page=modelado" class="btn btn-primary btn-section">Ver Modelado O-O</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card">
-                            <img src="https://picsum.photos/400/300?random=4" class="card-img-top" alt="Video Explicativo">
-                            <div class="card-body">
-                                <h5 class="card-title">Video Explicativo</h5>
-                                <p class="card-text">
-                                    Esta sección contiene un video tutorial explicativo que detalla los conceptos clave del sistema , mostrando su funcionamiento y beneficios.
-                                </p>
-                                <a href="index.php?page=video" class="btn btn-primary btn-section">Ver Video Explicativo</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
             </section>
 
             <!-- Sección de Marco Teórico -->
             <section id="marco_teorico">
-                <h2>Marco Teórico</h2>
-                <p>Contenido sobre el marco teórico del sistema que se está analizando y diseñando.</p>
+                <h2 class="text-center mb-4">Marco Teórico - Supermercado Hipermaxi</h2>
+
+                <!-- Descripción General del Proyecto -->
+                <h3>Descripción General del Proyecto</h3>
+                <p>
+                    El proyecto tiene como objetivo diseñar un sistema completo de gestión y administración de ventas para el supermercado <strong>Supermercado Hipermaxi</strong>, ubicado en la ciudad de La Paz, Bolivia. Este sistema está enfocado en optimizar el control de inventarios, la gestión de ventas, y la relación con proveedores, lo cual facilitará la operación eficiente del supermercado en sus 8 sucursales.
+                </p>
+        
+                <!-- Objetivo -->
+                <h3>Objetivo</h3>
+                <p>
+                    El propósito de este análisis y diseño del sistema es proveer una solución integral que permita gestionar de manera eficiente el inventario de productos, las ventas diarias y la interacción con proveedores, garantizando el abastecimiento adecuado y un flujo continuo de productos en las sucursales.
+                </p>
+        
+                <!-- Alcance -->
+                <h3>Alcance</h3>
+                <p>
+                    El sistema abarcará varias funciones clave:
+                    <ul>
+                        <li><strong>Gestión de Ventas:</strong> Control y registro de transacciones de ventas, con la capacidad de generar reportes detallados de las mismas.</li>
+                        <li><strong>Administración de Proveedores:</strong> Sistema de gestión de proveedores que permita realizar órdenes de compra de insumos y productos.</li>
+                        <li><strong>Control de Inventarios:</strong> Actualización automática de inventarios a medida que se realicen ventas, así como un sistema de alertas para reordenar productos cuando el stock sea bajo.</li>
+                    </ul>
+                </p>
+        
+        
+                <!-- Información del Supermercado -->
+                <h3>Información del Supermercado Hipermaxi</h3>
+                <p>
+                    El <strong>Supermercado Hipermaxi</strong> se encuentra en <strong>Av. Arce NRO 2519 Condominio torres del poeta esq. plaza Isabel La Catolica, La Paz, Municipio Murillo, Bolivia</strong>. Con 5 sucursales en diferentes zonas de la ciudad, se dedica a ofrecer una amplia variedad de productos a sus más de 5,000 clientes registrados.
+                </p>
+                <ul>
+                    <li><strong>Categorías de Productos:</strong> Alimentos, bebidas, productos de limpieza, artículos de hogar.</li>
+                    <li><strong>Perfil de Clientes:</strong> Consumidores finales y pequeñas empresas qsue realizan compras al por mayor.</li>
+                    <li><strong>Relación con Proveedores:</strong> El supermercado mantiene relaciones continuas con proveedores nacionales e internacionales para garantizar la disponibilidad de productos.</li>
+                </ul>
+        
+                <h3>Algunas imagenes de nuestras sucursales</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="img/sucursal1.jpg" class="img-fluid" alt="Sucursal 1 - Supermercado San José">
+                    </div>
+                    <div class="col-md-6">
+                        <img src="img/sucursal2.jpg" class="img-fluid" alt="Sucursal 2 - Supermercado San José">
+                    </div>
+                </div>
+        
             </section>
 
             <!-- Sección de Análisis Estructurado -->
             <section id="analisis_estructurado">
-                <h2>Modelo Escencial</h2>
-                <p>Información sobre el análisis estructurado y el modelo esencial.</p>
+                <h1>Modelo Estructurado del Sistema para Supermercado Hipermaxi</h1>
+            </header>
+            
+            <main>
+                <section id="analisis-estructurado">
+                    <h2>¿Qué es el Análisis Estructurado?</h2>
+                    <p>El análisis estructurado es una metodología que permite descomponer sistemas complejos en partes simples y organizadas, facilitando su diseño y documentación. Su enfoque principal es garantizar que los procesos y datos sean consistentes y estén alineados con los objetivos del sistema.</p>
+                </section>
+        
+                <section id="modelo-ambiental">
+                    <h2>Modelo Ambiental</h2>
+                    <p>El modelo ambiental define el alcance del sistema y su interacción con los agentes externos. Incluye los objetivos clave, los eventos principales que activan procesos y las relaciones con otras entidades.</p>
+                    <ul>
+                        <li><strong>Declaración de Propósitos (DP):</strong> Este modelo tiene como objetivo garantizar una gestión eficiente del inventario, procesar ventas con rapidez y mantener un registro actualizado de clientes y proveedores.</li>
+                        <li><strong>Lista de Acontecimientos (LA):</strong> Los eventos incluyen:
+                            <ul>
+                                <li>Registro de nuevos productos en el inventario.</li>
+                                <li>Actualización de cantidades en stock después de cada venta.</li>
+                                <li>Generación de reportes mensuales de ventas y stock.</li>
+                                <li>Notificación automática al administrador sobre niveles bajos de inventario.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Diagrama de Contexto (DC):</strong> 
+                            <p>Representa cómo el sistema interactúa con los agentes externos. Los principales actores son:</p>
+                            <ul>
+                                <li><strong>Clientes:</strong> Realizan compras y reciben comprobantes de pago.</li>
+                                <li><strong>Administradores:</strong> Gestionan el inventario y supervisan las ventas.</li>
+                                <li><strong>Proveedores:</strong> Suministran productos al sistema.</li>
+                                <li><strong>Sistema de Inventario:</strong> Registra y actualiza el stock en tiempo real.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+        
+                <section id="modelo-comportamiento">
+                    <h2>Modelo de Comportamiento</h2>
+                    <p>El modelo de comportamiento describe los flujos internos del sistema, las relaciones entre las entidades principales y los datos que se procesan durante la operación del supermercado.</p>
+                    <ul>
+                        <li><strong>Diagrama de Flujo de Datos (DFD):</strong> Representa cómo la información fluye entre los procesos del sistema.</li>
+                        <li><strong>Diagrama Entidad/Relación (DER):</strong> Describe las conexiones entre las entidades principales: Productos, Clientes, Administradores y Proveedores.</li>
+                        <li><strong>Diagrama de Datos (DD):</strong> Detalla la estructura de los datos, como ID de productos, categorías y niveles de inventario.</li>
+                        <li><strong>Diagrama de Transacciones (DTS):</strong> Muestra los procesos clave, como agregar productos al inventario y registrar ventas.</li>
+                    </ul>
+                </section>
+        
             </section>
 
             <!-- Sección de Modelo Ambiental -->
             <section id="modelo_ambiental">
-                <h2>Modelo Ambiental</h2>
-                <p>Detalles sobre el modelo ambiental del análisis estructurado.</p>
+
+                <h1>Modelo Ambiental</h1>
+
+                <br><h3>¿Qué es un modelo ambiental?</h3>
+                <br><p>El modelo ambiental es una representación conceptual del entorno de un sistema que describe cómo interactúa este con los diferentes actores (personas u otros sistemas) externos. Este modelo ayuda a identificar las entradas y salidas principales del sistema, los actores involucrados y las relaciones entre ellos. El modelo ambiental se centra en qué hace el sistema y no en cómo lo hace.
+            
+                    <br>Por lo general, el modelo ambiental incluye:
+                <ol>
+                    <li>Declaración de propósito: Explica el objetivo principal del sistema.</li>
+                    <li>Lista de acontecimientos: Enumera las interacciones o eventos clave que se generan entre el sistema y los actores externos.</li>
+                    <li>Diagrama de contexto: Representa gráficamente las conexiones de entradas y salidas entre el sistema y sus actores externos.</p></li>
+                </ol>
+            
+                <br><h3>Para qué sirve un modelo ambiental?</h3>
+            
+                <ol>
+                    <li>Delimitar el alcance del sistema: Define claramente los límites del sistema, identificando qué es parte de este y qué pertenece al entorno externo.</li>
+                    <li>Entender las interacciones clave: Ayuda a comprender qué información fluye hacia el sistema (entradas) y qué genera como resultado (salidas).</li>
+                    <li>Facilitar la comunicación entre equipos: Es una herramienta visual útil para explicar el propósito y las funciones del sistema a los interesados (clientes, desarrolladores, diseñadores, etc.).</li>
+                    <li>Guiar el diseño y desarrollo del sistema: Actúa como base para la planificación de los procesos internos y el diseño de la arquitectura del software.</li>
+                    <li>Evitar confusiones: Asegura que todas las partes involucradas entiendan los límites y las funciones del sistema, reduciendo malentendidos durante el desarrollo.</li>
+                </ol>
+            
+                <br><p>En resumen, el modelo ambiental nos proporciona una visión clara del contexto del sistema, siendo el primer paso fundamental para su diseño y desarrollo.</p>
+                    
+                <br><h1>Modelo Ambiental para nuestro sistema</h1>
+            
+                <br><h3>a) DECLARACIÓN DE PROPÓSITOS: </h3>
+            
+                <p>El sistema tiene como objetivo principal gestionar las operaciones de venta y el control de inventarios en el supermercado Hipermaxi. Esto incluye la administración de productos, precios, existencias, compras de clientes, proveedores, ofertas y reportes de ventas. Además, permite mejorar la experiencia del cliente, optimizar los procesos internos y asegurar la disponibilidad de productos.</p>
+                <h3>b) LISTA DE ACONTECIMIENTOS: </h3>
+                    
+                <p>Eventos relacionados con las ventas:</p>
+                <ol>
+                    <li>Un cliente selecciona productos para comprar.</li>
+                    <li>Un cliente realiza el pago en caja.</li>
+                    <li>Se genera un comprobante de venta.</li>
+                    <li>Se realiza una devolución de producto por parte del cliente.</li>
+                </ol>
+                
+                <p>Eventos relacionados con la gestión de inventarios:</p>
+            
+                <ol>
+                    <li>El inventario de un producto disminuye tras la venta.
+                    <li>Un empleado actualiza las existencias de un producto.
+                    <li>Se realiza el ingreso de un nuevo producto al sistema.
+                    <li>Se detecta un producto con stock mínimo y se notifica al proveedor.
+                </ol>
+                    
+                <p>Eventos relacionados con proveedores:</p>
+                <ol>
+                    <li>Se realiza un pedido de reposición de productos a un proveedor.</li>
+                    <li>Se registra la recepción de un pedido de un proveedor.</li>
+                </ol>
+                
+                <p>Eventos relacionados con ofertas y promociones:</p>
+                <ol>
+                    <li>Un administrador define una oferta o descuento para un producto.</li>
+                    <li>Se actualizan los precios de productos en oferta.</li>
+                </ol>
+            
+                <h3>Diagrama de Contexto</h3>
+                <div class="text-center mb-4">
+                    <img src="img/MA_DiagramaContexto.png" alt="Diagrama Contexto" style="width: 1200px; height: auto;">
+                    <p>Diagrama de Contexto</p>
+                </div>
+            
+                
             </section>
 
             <!-- Sección de Modelo de Comportamiento -->
@@ -235,8 +340,19 @@
 
             <!-- Sección de Video -->
             <section id="video">
-                <h2>Video</h2>
-                <p>Aquí puedes colocar el video relacionado con el sistema o análisis.</p>
+                <h2 class="text-center" style="color: #000;">Video tutorial del Sistema de Gestión de Productos - Hipermaxi</h2>
+        <p class="text-center" style="font-size: 18px;">
+            En este tutorial, te mostraremos el funcionamiento del sistema que estamos implementando para la gestión de ventas y administración de productos en el supermercado Hipermaxi.
+            A través de este video, podrás entender cómo interactúan los distintos módulos del sistema, desde el registro de productos hasta el control de inventarios y las ventas en tiempo real.
+        </p>
+
+        <div class="text-center mt-4">
+            <video width="80%" controls>
+                <source src="img/tutorial_video.mp4" type="video/mp4">
+                
+            </video>
+        </div>
+        
             </section>
 
         </div>
