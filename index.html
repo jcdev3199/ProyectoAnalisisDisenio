@@ -279,7 +279,7 @@
             <!-- Sección de Análisis Estructurado -->
             <section id="analisis_estructurado">
                 <br><br><br>
-                <h1>Modelo  esencial para el supermercado Hipermaxi<br></h1>
+                <h1 class="text-center mb-4">Modelo  esencial para el supermercado Hipermaxi<br></h1>
             </header>
             
             <main>
@@ -330,7 +330,7 @@
             <section id="modelo_ambiental">
                 <br><br><br>
 
-                <br><h1>Modelo Ambiental para nuestro sistema</h1>
+                <br><h1 class="text-center mb-4">Modelo Ambiental para nuestro sistema</h1>
             
                 <br><h3>a) DECLARACIÓN DE PROPÓSITOS: </h3>
             
@@ -377,48 +377,101 @@
 
             <!-- Sección de Modelo de Comportamiento -->
             <section id="modelo_comportamiento">
-                <br><br><br>
-                <h1>Modelo de Comportamiento</h1>
+                <br><br><br><br>
+                <h1 class="text-center mb-4" >Modelo de Comportamiento</h1>
                 <ul>
                     <li><strong>Diagrama de Flujo de Datos (DFD):</strong>
                          <p>El sistema coordina módulos de inventario, ventas y pagos para gestionar productos, transacciones y reportes en Hipermaxi. Conecta proveedores, clientes y administración para mantener el flujo de mercancías, ventas y conciliaciones financieras.</p>
                     </li>
                     <div class="text-center mb-4">
-                        <img src="img/DFD.png" alt="Diagrama Contexto" style="width: 1200px; height: auto;">
+                        <img src="img/DFD.png" alt="Diagrama DFD" style="width: 1200px; height: auto;">
                     </div>
                     <li><strong>Diagrama Entidad/Relación (DER):</strong> 
                         <p>El diagrama entidad-relación describe las interacciones entre usuarios, ventas, productos e inventarios en el sistema de gestión Hipermaxi, destacando cómo los clientes realizan compras, los administradores consultan reportes, y los proveedores suministran productos al inventario para mantener el flujo operativo.</p>
                     </li>
                     <div class="text-center mb-4">
-                        <img src="img/DER.png" alt="Diagrama Contexto" style="width: 1200px; height: auto;">
+                        <img src="img/DER.png" alt="Diagrama DER" style="width: 1200px; height: auto;">
                     </div>
                     <li><strong>Diagrama de Datos (DD):</strong> 
                         <p>El diagrama de datos define las relaciones entre entidades clave como clientes, productos, ventas, pagos, promociones e inventarios en el sistema. Cada entidad contiene atributos específicos, y sus relaciones garantizan la trazabilidad de operaciones como pedidos, devoluciones y generación de reportes.</p>
                     </li>
                     <div class="text-center mb-4">
-                        <img src="img/DD.png" alt="Diagrama Contexto" style="width: 1200px; height: auto;">
+                        <img src="img/DD.png" alt="Diagrama DD" style="width: 1200px; height: auto;">
                     </div>
                     <li><strong>Diagrama de Transacciones (DTS):</strong>
                         <p>El diagrama de transacciones muestra cómo interactúan los módulos del sistema, destacando la gestión de inventarios, promociones, pagos y devoluciones, vinculados a clientes, cajeros, proveedores y administradores. Cada flujo representa procesos como actualización de stock, registro de compras y generación de reportes, asegurando un manejo integral de operaciones en Hipermaxi.</p>
                     </li>
                     <div class="text-center mb-4">
-                        <img src="img/DTS.png" alt="Diagrama Contexto" style="width: 1200px; height: auto;">
+                        <img src="img/DTS.png" alt="Diagrama DTS" style="width: 1200px; height: auto;">
                     </div>
                 </ul>
             </section>
 
-            <!-- Sección de Modelado -->
+            <!-- Sección de Modelado OaO-->
             <section id="modelado">
-                <h2>Modelado Orientado a Objetos</h2>
-                <p>Contenido relacionado con el modelado orientado a objetos y su aplicación.</p>
+                <h1 class="text-center mb-4">Modelado Orientado a Objetos</h1>
+                <p class="text-justify">El modelado orientado a objetos del sistema del supermercado Hipermaxi refleja la interacción entre las principales entidades del negocio, sus relaciones y comportamientos. A continuación, se describen las principales clases y sus asociaciones:</p>
+    
+                <div class="mb-4">
+                    <h3 class="mb-2" style="font-size: 1.5rem; color: #000000; font-weight: bold;">Clase Reporte</h3>
+                    <p>La clase <strong>Reporte</strong> está asociada con:</p>
+                    <ul>
+                        <li><strong>Inventario</strong>: Relación de asociación para generar reportes de existencias y movimientos de productos.</li>
+                        <li><strong>Producto</strong>: Relación de asociación para detallar información de los productos en reportes específicos.</li>
+                        <li><strong>Empleado</strong>: Relación de asociación para incluir detalles del personal responsable en ciertos reportes.</li>
+                    </ul>
+                </div>
+    
+                <div class="mb-4">
+                    <h3 class="mb-2" style="font-size: 1.5rem; color: #000000; font-weight: bold;">Clase Inventario</h3>
+                    <p>La clase <strong>Inventario</strong> utiliza una relación de composición con:</p>
+                    <ul>
+                        <li><strong>Producto</strong>: Cada producto está directamente contenido en el inventario, estableciendo una dependencia fuerte.</li>
+                    </ul>
+                </div>
+    
+                <div class="mb-4">
+                    <h3 class="mb-2" style="font-size: 1.5rem; color: #000000; font-weight: bold;">Clase Venta</h3>
+                    <p>La clase <strong>Venta</strong> incluye las siguientes relaciones:</p>
+                    <ul>
+                        <li><strong>Producto</strong>: Relación de agregación para incluir múltiples productos en una transacción.</li>
+                        <li><strong>Empleado</strong>: Relación de asociación para registrar al empleado que procesó la venta.</li>
+                        <li><strong>Cliente</strong>: Relación de asociación para identificar al cliente involucrado en la transacción.</li>
+                    </ul>
+                </div>
+    
+                <div class="mb-4">
+                    <h3 class="mb-2" style="font-size: 1.5rem; color: #000000; font-weight: bold;">Clase Producto</h3>
+                    <p>La clase <strong>Producto</strong> tiene las siguientes relaciones:</p>
+                    <ul>
+                        <li><strong>CarritoDeCompra</strong>: Relación de asociación para incluir productos seleccionados por el cliente.</li>
+                        <li><strong>CategoríaProducto</strong>: Relación de asociación para clasificar productos según su categoría.</li>
+                    </ul>
+                </div>
+    
+                <div class="mb-4">
+                    <h3 class="mb-2" style="font-size: 1.5rem; color: #000000; font-weight: bold;">Clase Persona</h3>
+                    <p>La clase <strong>Persona</strong> es una clase general que hereda a:</p>
+                    <ul>
+                        <li><strong>Proveedor</strong>: Relación de herencia para representar a los proveedores del supermercado.</li>
+                        <li><strong>Empleado</strong>: Relación de herencia para gestionar a los empleados del sistema.</li>
+                        <li><strong>Cliente</strong>: Relación de herencia para manejar a los clientes registrados.</li>
+                    </ul>
+                </div>
+    
+                <p class="text-justify">Este modelado orientado a objetos permite establecer una estructura clara y modular del sistema, facilitando su desarrollo y mantenimiento.</p>
+                <h3>Diagrama del modelado orientado a Objetos</h3>
+                <div class="text-center mb-4">
+                    <img src="img/MOO.png" alt="Diagrama OaO" style="width: 1200px; height: auto;">
+                </div>
             </section>
-
+    
             <!-- Sección de Video -->
             <section id="video">
                 <h2 class="text-center" style="color: #000;">Video tutorial del Sistema de Gestión de Productos - Hipermaxi</h2>
-                <p class="text-center" style="font-size: 18px;">
+                <p style="font-size: 18px;">
                     En este tutorial, te mostraremos el funcionamiento del sistema que estamos implementando para la gestión de ventas y administración de productos en el supermercado Hipermaxi.
-                    A través de este video, podrás entender cómo interactúan los distintos módulos del sistema, desde el registro de productos hasta el control de inventarios y las ventas en tiempo real.
+                    A través de este video, podrás entender cómo interactúan los distintos módulos del sistema, desde la navegacion en este sitio web y el sistema que proponemos implementar en tiempo real.
                 </p>
 
         <div class="text-center mt-4">
